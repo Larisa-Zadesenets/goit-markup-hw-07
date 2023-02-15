@@ -201,6 +201,7 @@ body {
         display: flex;
         margin: 0;
         flex-grow: 1;
+        flex-wrap: wrap;
         gap: 20px;
       
     }
@@ -247,11 +248,15 @@ body {
         margin-bottom: 0;
         margin-left: auto;
         margin-right: auto;
-        width: 360px;
         font-weight: 900;
         font-size: 26px;
         line-height: 1.615;
         letter-spacing: 0.06em;
+    }
+    @media screen and (min-width: 480px){
+        .title{
+            width: 360px;
+        }
     }
     .button {
         margin-top: 40px;
@@ -952,6 +957,11 @@ body {
             background-image:
             url("../images/Img@2x.jpg");  
         }
+    }
+    .title {
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.363;
     }
     .features-list {
         width: 270px;
