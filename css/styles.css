@@ -145,6 +145,7 @@ body {
     }  
 
     .mobile-menu.is-open {
+        overflow-y:scroll;
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
@@ -468,9 +469,7 @@ body {
         color:var(--hero-color);
         }
     .footer-site-nav-list {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        text-align: center;
         list-style: none;
         padding-top: 20px;
         margin: 0;
@@ -478,7 +477,7 @@ body {
         
     }
     .footer-title {
-        display: inline-block;
+        text-align: center;
         padding-top: 60px;
         padding-bottom: 20px;
         margin: 0 auto 0 auto;
@@ -528,12 +527,12 @@ body {
         letter-spacing: 0.03em;
     }
     .footer-shell {
-        display: inline-block;
         margin-left: auto;
         margin-right: auto;
     }
     .footer-form {
         display: block;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
         
@@ -546,7 +545,6 @@ body {
         border-radius: 4px;
         color: var(--hero-color);
         border: 1px solid rgba(255, 255, 255, 0.3);
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         transition: border-color var(--transition-func);
         background-color: var(--background-hero-color);
     }
@@ -559,6 +557,7 @@ body {
         align-items: center;
         text-align: center;
         justify-content: center;
+        margin: 0 auto;
         gap: 10px;
         width: 200px;
         height: 50px;
@@ -916,7 +915,6 @@ body {
     }
     .footer-title {
         padding-top: 0;
-        padding-left: 45px;
     }
     
     .footer-additional-box {
@@ -928,6 +926,9 @@ body {
         margin-top: 60px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .footer-form-input {
+        width: 450px;
     }
 }
 
@@ -1139,7 +1140,7 @@ body {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         transition: color var(--transition-func);
     }
-
+}
   /*--------------section-portfolio-----------------*/
 .section-portfolio {
     padding: 94px 0;
