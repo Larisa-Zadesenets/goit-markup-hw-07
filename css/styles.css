@@ -59,12 +59,10 @@ body {
     margin: 0 auto 0 auto; 
 }
 .container-portfolio {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+    width: 100%;
+    max-width: 100%;
     padding: 0 15px 0 15px;
+    margin: 0 auto 0 auto;
 }  
 .mobile-menu_container{
     position: relative;
@@ -78,15 +76,27 @@ body {
         width: 480px;  
         margin: 0 auto 0 auto; 
     }
+    .container-portfolio {
+        width: 480px;  
+        margin: 0 auto 0 auto; 
+    }
 }
 @media screen and (min-width: 768px){
     .container {
         width: 768px;  
         margin: 0 auto 0 auto; 
     }
+    .container-portfolio {
+        width: 768px;  
+        margin: 0 auto 0 auto; 
+    }
 }
 @media screen and (min-width: 1200px){
     .container {
+        width: 1200px;  
+        margin: 0 auto 0 auto; 
+    }
+    .container-portfolio {
         width: 1200px;  
         margin: 0 auto 0 auto; 
     }
@@ -149,6 +159,7 @@ body {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
+        z-index: 2;
     }
     .mobile-menu_close{
         position: absolute;
@@ -899,6 +910,7 @@ body {
         height: 536px;
         flex-basis: calc((100% - 30px)/2);  
     }
+
     .client-link {
         flex-basis: calc((100% - 60px) /3);
         padding: 16px 60px;
@@ -1147,7 +1159,7 @@ body {
 }
 .button-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 8px;
     margin-top: 0;
     margin-bottom: 0;
@@ -1176,10 +1188,8 @@ body {
     color: var(--hero-color);
 }
 .list-works {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: calc((100%-60px)/3);
-    gap: 30px;
+    width: 100%;
+    
     padding: 0;
     margin: 50px 0 0 0;
 }
@@ -1187,6 +1197,7 @@ body {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .works {
+    width: 100%;
     background:var(--hero-color);  
     border: 1px solid #EEEEEE;
     list-style: none;
@@ -1196,6 +1207,7 @@ body {
     
 }
 .works-img {
+    
     position: relative; 
     overflow: hidden;
 }
@@ -1238,7 +1250,41 @@ body {
     line-height: 1.88; 
     letter-spacing: 0.03em;
 }
+@media screen and (min-width: 768px) {
+    .works {
+        width: 354px;
+        height: 404px;
+        flex-basis: calc((100% - 30px)/2);
+    }
+    .list-works {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc((100%-30px)/2);
+        gap: 30px;
+    }
+    .button-list {
+        justify-content: center;
 }
+@media screen and (min-width: 1200px){
+    .works {
+        width: 370px;
+        height: 404px;
+        flex-basis: calc((100% - 60px)/3);
+    } 
+    .list-works {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc((100%-60px)/3);
+        gap: 30px;
+    }
+}
+
+    
+
+
+ 
+
+
  /*--------------section-portfolio-----------------*/
 
 /*============== D E S K T O P =================*/
